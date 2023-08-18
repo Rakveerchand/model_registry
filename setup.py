@@ -11,7 +11,7 @@ setuptools.setup(
     keywords='model_registry, pypi, sagemaker',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/tomchen/example_pypi_package',
+    url='https://github.com/Rakveerchand/model_registry.git',
     project_urls={
         'Documentation': 'https://github.com/tomchen/example_pypi_package',
         'Bug Reports': 'https://github.com/tomchen/example_pypi_package/issues',
