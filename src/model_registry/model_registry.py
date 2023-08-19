@@ -4,7 +4,7 @@ import boto3
 def model_registry(sagemaker_role, model_package_group_name, model_url, batch_transform_image,
                    model_approval_status,
                    model_package_description):
-    client = boto3.client('sagemaker')
+    client = boto3.client('sagemaker', region_name='us-east-1')
 
     modelpackage_inference_specification = {
         "InferenceSpecification": {
