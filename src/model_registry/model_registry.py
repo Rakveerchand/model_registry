@@ -1,10 +1,10 @@
 import boto3
 
 
-def model_registry(sagemaker_role, model_package_group_name, model_url, batch_transform_image,
+def model_registry(aws_region,aws_access_key,aws_secret_key,sagemaker_role, model_package_group_name, model_url, batch_transform_image,
                    model_approval_status,
                    model_package_description):
-    client = boto3.client('sagemaker', region_name='us-east-1')
+    client = boto3.client('sagemaker', region_name=aws_region, aws_access_key_id=aws_access_key, aws_secret_access_key=aws_secret_key)
 
     modelpackage_inference_specification = {
         "InferenceSpecification": {
@@ -46,6 +46,7 @@ def model_registry(sagemaker_role, model_package_group_name, model_url, batch_tr
         Containers=container_list
     )
     print("Model arn : {}".format(create_model_response["ModelArn"]))
+
 
 
 
