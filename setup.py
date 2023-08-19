@@ -35,7 +35,7 @@ setuptools.setup(
         'Operating System :: OS Independent',
     ],
     python_requires='>=3.6',
-    install_requires=['boto3==1.28.10', 'sagemaker==2.173.0',"botocore==1.4.1","s3transfer==0.1.0","sagemaker==2.178.0"],
+    install_requires=['boto3==1.28.10', 'sagemaker==2.178.0',"botocore==1.4.1","s3transfer==0.1.0","sagemaker==2.178.0"],
     extras_require={
         'dev': ['check-manifest'],
         # 'test': ['coverage'],
